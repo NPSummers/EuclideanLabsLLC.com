@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us | EuclideanLabs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get in touch with EuclideanLabs for your 3D printing and CAD design needs.">
+    <meta property="og:title" content="Contact Us | EuclideanLabs">
+    <meta property="og:site_name" content="EuclideanLabs">
+    <meta property="og:description" content="Get in touch with EuclideanLabs for your 3D printing and CAD design needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/EuclideanLabs.Logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/EuclideanLabs.Logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/EuclideanLabs.Logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/EuclideanLabs.Logo.png">
+    <link rel="shortcut icon" href="images/EuclideanLabs.Logo.png">
+    <meta name="apple-mobile-web-app-title" content="EuclideanLabs">
+    <meta name="application-name" content="EuclideanLabs">
+
+    <script src="https://kit.fontawesome.com/cd0b3b48bc.js" crossorigin="anonymous"></script>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font.min.css" rel="stylesheet">
+
+    <style>
+      #navbar {
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        opacity: 0;
+        animation: fadein 1s forwards;
+        animation-delay: 1s;
+      }
+      #navlinks {
+        align-self: center;
+        color: white;
+      }
+      a.navlink {
+        text-decoration: none;
+        margin-left: 15px;
+        color: #e0e0e0;
+        transition: all 0.2s;
+        font-size: x-large;
+      }
+      a.navlink:hover,
+      a.navlink.active {
+        color: white;
+      }
+      a.navlink > i {
+        margin-right: 3px;
+      }
+      .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #000;
+      }
+      .contact-form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="FullPageContainer">
+      <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div id="navlinks">
+          <a href="about.html" class="navlink"><i class="fas fa-info-circle"></i> About Us</a>
+          <a href="reviews.html" class="navlink"><i class="fas fa-star"></i> Reviews</a>
+          <a href="contact.html" class="navlink active"><i class="fas fa-envelope"></i> Contact Us</a>
+          <a href="index.html" class="navlink"><i class="fas fa-home"></i> Home</a>
+        </div>
+      </nav>
+      <video autoplay muted playsinline class="logo" aria-label="EuclideanLabs logo animation">
+        <source src="images/EuclideanLabs.mp4" type="video/mp4">
+        <p>Your browser does not support the video. Please visit our homepage for more information.</p>
+      </video>
+      <div class="below_menu">
+        <div class="arrow" onclick="window.scrollTo({top: document.querySelector('.FullPageContainer:nth-child(2)').offsetTop, behavior: 'smooth'})" aria-label="Scroll to next section">
+          <br><br>
+          ▼
+        </div>
+      </div>
+    </div>
+
+    <div class="FullPageContainer">
+      <div class="FlexContainer">
+        <div class="FlexColumn">
+          <h1 class="ContainerTitle lato-bold">Contact Us</h1>
+          <p class="ContainerParagraph lato-light">
+            Have a question or want to discuss a project? Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mldbvlnv" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="text-align: center;">
+      <a href="contact.html" class="navlink" style="text-align: center; font-size: medium;"><i class="fas fa-envelope"></i> Contact Us</a> | 
+      <a href="privacy.html" class="navlink" style="text-align: center; font-size: medium;"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+      <p class="lato-light">© 2025 EuclideanLabs. All rights reserved.</p>
+    </footer>
+  </body>
+</html> 

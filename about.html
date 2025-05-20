@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About Us | EuclideanLabs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn about EuclideanLabs, a family-run 3D printing and CAD design business dedicated to innovation and quality.">
+    <meta property="og:title" content="About Us | EuclideanLabs">
+    <meta property="og:site_name" content="EuclideanLabs">
+    <meta property="og:description" content="Learn about EuclideanLabs, a family-run 3D printing and CAD design business dedicated to innovation and quality.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/EuclideanLabs.Logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/EuclideanLabs.Logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/EuclideanLabs.Logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/EuclideanLabs.Logo.png">
+    <link rel="shortcut icon" href="images/EuclideanLabs.Logo.png">
+    <meta name="apple-mobile-web-app-title" content="EuclideanLabs">
+    <meta name="application-name" content="EuclideanLabs">
+
+    <script src="https://kit.fontawesome.com/cd0b3b48bc.js" crossorigin="anonymous"></script>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font.min.css" rel="stylesheet">
+
+    <style>
+      #navbar {
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        opacity: 0;
+        animation: fadein 1s forwards;
+        animation-delay: 1s;
+      }
+      #navlinks {
+        align-self: center;
+        color: white;
+      }
+      a.navlink {
+        text-decoration: none;
+        margin-left: 15px;
+        color: #e0e0e0;
+        transition: all 0.2s;
+        font-size: x-large;
+      }
+      a.navlink:hover,
+      a.navlink.active {
+        color: white;
+      }
+      a.navlink > i {
+        margin-right: 3px;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="FullPageContainer">
+      <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div id="navlinks">
+          <a href="about.html" class="navlink active"><i class="fas fa-info-circle"></i> About Us</a>
+          <a href="reviews.html" class="navlink"><i class="fas fa-star"></i> Reviews</a>
+          <a href="contact.html" class="navlink"><i class="fas fa-envelope"></i> Contact Us</a>
+          <a href="index.html" class="navlink"><i class="fas fa-home"></i> Home</a>
+        </div>
+      </nav>
+      <video autoplay muted playsinline class="logo" aria-label="EuclideanLabs logo animation">
+        <source src="images/EuclideanLabs.mp4" type="video/mp4">
+        <p>Your browser does not support the video. Please visit our homepage for more information.</p>
+      </video>
+      <div class="below_menu">
+        <div class="arrow" onclick="window.scrollTo({top: document.querySelector('.FullPageContainer:nth-child(2)').offsetTop, behavior: 'smooth'})" aria-label="Scroll to next section">
+          <br><br>
+          ▼
+        </div>
+      </div>
+    </div>
+
+    <div class="FullPageContainer">
+      <div class="FlexContainer">
+        <div class="FlexColumn">
+          <h1 class="ContainerTitle lato-bold">Our Story</h1>
+          <p class="ContainerParagraph lato-light">
+Founded in late 2023, EuclideanLabs is a family-run business born from a shared passion for creativity, technology, and craftsmanship. What began as a hobby in a garage has rapidly evolved into a dynamic 3D printing and CAD design company. Serving a diverse clientele, from hobbyists to small businesses, we take pride in transforming innovative ideas into tangible realities with precision and care.          </p>
+          <p class="ContainerParagraph lato-light">
+At EuclideanLabs, we harness the power of additive manufacturing to address real-world challenges. Whether crafting a custom prototype, a unique cosplay piece, or a small-batch production run, every project is approached with enthusiasm and meticulous attention to detail. Our family team infuses each creation with a personal touch, ensuring solutions are tailored to meet the specific needs of our clients.          </p>
+          <p class="ContainerParagraph lato-light">
+In just 18 months, EuclideanLabs has built a strong reputation for delivering high-quality, innovative designs. We are committed to pushing the boundaries of what’s possible with 3D printing, fostering creativity, and providing exceptional service. Our mission remains simple: to bring ideas to life with the precision and dedication that only a family-run business can offer.          </p>        
+</div>
+        <div class="FlexColumn">
+          <h1 class="ContainerTitle lato-bold">Our Values</h1>
+          <div class="Feature">
+            <p class="FeatureIcon"><i class="fas fa-solid fa-crown"></i></p>
+            <p class="FeatureLabel lato-regular">Quality First</p>
+          </div>
+          <div class="Feature">
+            <p class="FeatureIcon"><i class="fas fa-users"></i></p>
+            <p class="FeatureLabel lato-regular">Family-Driven</p>
+          </div>
+          <div class="Feature">
+            <p class="FeatureIcon"><i class="fas fa-lightbulb"></i></p>
+            <p class="FeatureLabel lato-regular">Innovation</p>
+          </div>
+          <div class="Feature">
+            <p class="FeatureIcon"><i class="fas fa-heart"></i></p>
+            <p class="FeatureLabel lato-regular">Community Focus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="text-align: center;">
+      <a href="contact.html" class="navlink" style="text-align: center; font-size: medium;"><i class="fas fa-envelope"></i> Contact Us</a> | 
+      <a href="privacy.html" class="navlink" style="text-align: center; font-size: medium;"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+      <p class="lato-light">© 2025 EuclideanLabs. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
