@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>About Us | EuclideanLabs</title>
+    <title>Projects | EuclideanLabs</title>
     <meta name="viewport" content="width=1024">
-    <meta name="description" content="Learn about EuclideanLabs, a family-run 3D printing and CAD design business dedicated to innovation and quality.">
-    <meta property="og:title" content="About Us | EuclideanLabs">
+    <meta name="description" content="Explore our portfolio of 3D printing and CAD design projects at EuclideanLabs.">
+    <meta property="og:title" content="Projects | EuclideanLabs">
     <meta property="og:site_name" content="EuclideanLabs">
-    <meta property="og:description" content="Learn about EuclideanLabs, a family-run 3D printing and CAD design business dedicated to innovation and quality.">
+    <meta property="og:description" content="Explore our portfolio of 3D printing and CAD design projects at EuclideanLabs.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/EuclideanLabs.Logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/EuclideanLabs.Logo.png">
@@ -17,19 +17,7 @@
     <meta name="apple-mobile-web-app-title" content="EuclideanLabs">
     <meta name="application-name" content="EuclideanLabs">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JV2DHN4N9P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JV2DHN4N9P');
-</script>
-
-
     <script src="https://kit.fontawesome.com/cd0b3b48bc.js" crossorigin="anonymous"></script>
-
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font.min.css" rel="stylesheet">
 
@@ -61,6 +49,44 @@
       a.navlink > i {
         margin-right: 3px;
       }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+      .project-card {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .project-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .project-info {
+        padding: 1.5rem;
+      }
+      .project-title {
+        color: white;
+        margin: 0 0 0.5rem 0;
+        font-size: 1.5rem;
+      }
+      .project-date {
+        color: #e0e0e0;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      .project-description {
+        color: #e0e0e0;
+        margin: 0;
+        line-height: 1.5;
+      }
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,7 +101,7 @@
           <a href="projects.html" class="navlink active"><i class="fas fa-cogs"></i> Projects</a>
           <a href="reviews.html" class="navlink"><i class="fas fa-star"></i> Reviews</a>
           <a href="contact.html" class="navlink"><i class="fas fa-envelope"></i> Contact</a>
-          <a href="about.html" class="navlink active"><i class="fas fa-info-circle"></i> About Us</a>
+          <a href="about.html" class="navlink"><i class="fas fa-info-circle"></i> About Us</a>
         </div>
       </nav>
       <video autoplay muted playsinline class="logo" aria-label="EuclideanLabs logo animation">
@@ -93,35 +119,60 @@
     <div class="FullPageContainer">
       <div class="FlexContainer">
         <div class="FlexColumn">
-          <h1 class="ContainerTitle lato-bold">Our Story</h1>
+          <h1 class="ContainerTitle lato-bold">Our Projects</h1>
           <p class="ContainerParagraph lato-light">
-Founded in late 2023, EuclideanLabs is a family-run business born from a shared passion for creativity, technology, and craftsmanship. What began as a hobby in a garage has rapidly evolved into a dynamic 3D printing and CAD design company. Serving a diverse clientele, from hobbyists to small businesses, we take pride in transforming innovative ideas into tangible realities with precision and care.          </p>
-          <p class="ContainerParagraph lato-light">
-At EuclideanLabs, we harness the power of additive manufacturing to address real-world challenges. Whether crafting a custom prototype, a unique cosplay piece, or a small-batch production run, every project is approached with enthusiasm and meticulous attention to detail. Our family team infuses each creation with a personal touch, ensuring solutions are tailored to meet the specific needs of our clients.          </p>
-          <p class="ContainerParagraph lato-light">
-In just 18 months, EuclideanLabs has built a strong reputation for delivering high-quality, innovative designs. We are committed to pushing the boundaries of what’s possible with 3D printing, fostering creativity, and providing exceptional service. Our mission remains simple: to bring ideas to life with the precision and dedication that only a family-run business can offer.          </p>        
-</div>
-        <div class="FlexColumn">
-          <h1 class="ContainerTitle lato-bold">Our Values</h1>
-          <div class="Feature">
-            <p class="FeatureIcon"><i class="fas fa-solid fa-crown"></i></p>
-            <p class="FeatureLabel lato-regular">Quality First</p>
-          </div>
-          <div class="Feature">
-            <p class="FeatureIcon"><i class="fas fa-users"></i></p>
-            <p class="FeatureLabel lato-regular">Family-Driven</p>
-          </div>
-          <div class="Feature">
-            <p class="FeatureIcon"><i class="fas fa-lightbulb"></i></p>
-            <p class="FeatureLabel lato-regular">Innovation</p>
-          </div>
-          <div class="Feature">
-            <p class="FeatureIcon"><i class="fas fa-heart"></i></p>
-            <p class="FeatureLabel lato-regular">Community Focus</p>
+            Explore our portfolio of 3D printing and CAD design projects. Each project represents our commitment to quality and innovation.
+          </p>
+          
+          <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+              <img src="images/Hubcap.png" alt="Hubcap" class="project-image">
+              <div class="project-info">
+                <h3 class="project-title">Hubcap</h3>
+                <div class="project-date">Completed: April 2025</div>
+                <p class="project-description">A hubcap model designed with high precision and attention to detail.</p>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+              <img src="images/Speaker.jpg" alt="Speakerbox" class="project-image">
+              <div class="project-info">
+                <h3 class="project-title">Speakerbox</h3>
+                <div class="project-date">Completed: February 2025</div>
+                <p class="project-description">A Speakerbox model designed with high precision and attention to detail.</p>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+              <img src="images/Clip.png" alt="Wire Holder Clip for Neurofeedback machines" class="project-image">
+              <div class="project-info">
+                <h3 class="project-title">Wire Holder Clip</h3>
+                <div class="project-date">Completed: January 2025</div>
+                <p class="project-description">A wire holder clip for a Neurofeedback machine.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <footer style="text-align: center;">
       <a href="contact.html" class="navlink" style="text-align: center; font-size: medium;"><i class="fas fa-envelope"></i> Contact Us</a> | 
@@ -129,4 +180,4 @@ In just 18 months, EuclideanLabs has built a strong reputation for delivering hi
       <p class="lato-light">© 2025 EuclideanLabs. All rights reserved.</p>
     </footer>
   </body>
-</html>
+</html> 
